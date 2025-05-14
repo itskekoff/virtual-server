@@ -7,3 +7,4 @@ node_modules/
 src-out/
 build/
 virtual-server.7z
+package-lock.json
