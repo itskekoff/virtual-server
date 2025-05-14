@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "@babel/generator": "^7.26.2",
+    "@babel/parser": "^7.26.2",
+    "@babel/traverse": "^7.25.9",
+    "@zhobo63/imgui-ts": "^0.1.46",
+    "fs-extra": "^11.2.0",
+    "gradient-string": "2.0.2",
+    "javascript-obfuscator": "^4.1.1",
+    "keypress": "^0.2.1",
+    "minecraft-protocol": "1.44.0",
+    "nan": "^2.22.0",
+    "node-global-key-listener": "^0.3.0",
+    "node-gyp": "^9.4.0",
+    "node-hide-console-window": "^2.2.0",
+    "node-machine-id": "^1.1.12",
+    "path": "^0.12.7",
+    "pkg": "^5.8.1",
+    "rcedit": "^4.0.1",
+    "vec3": "^0.1.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "jest": "^29.7.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "package": "cd native && node-gyp rebuild && cd ../ && node build.js",
+    "build": "cd native && node-gyp rebuild"
+  }
+}
